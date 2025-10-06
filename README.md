@@ -1,4 +1,4 @@
-# Restaurant POS System - Nativ
+# Nativ POS System 
 
 Sistema de punto de venta (POS) para restaurantes con facturación electrónica adaptada a Colombia.
 
