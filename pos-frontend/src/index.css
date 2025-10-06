@@ -10,6 +10,11 @@ body {
 
 /* FullScreenLoader.css */
 
+.imagen-redonda {
+  border-radius: 8px;
+  /* Puedes añadir otras propiedades aquí */
+}
+
 .fullscreen-loader {
   position: fixed;
   top: 0;

@@ -1,4 +1,5 @@
 const express = require("express");
+require("dotenv").config();
 const connectDB = require("./config/database");
 const config = require("./config/config");
 const globalErrorHandler = require("./middlewares/globalErrorHandler");
@@ -12,16 +13,16 @@ connectDB();
 
 // Middlewares
 app.use(cors({
-    credentials: true,
-    origin: ['http://localhost:5173']
-}))
+  origin: 'http://localhost:5173',
+  credentials: true
+}));
 app.use(express.json()); // parse incoming request in json format
 app.use(cookieParser())
 
 
 // Root Endpoint
 app.get("/", (req,res) => {
-    res.json({message : "Hello from POS Server!"});
+    res.json({message : "from NPOS Server!"});
 })
 
 // Other Endpoints
@@ -29,6 +30,7 @@ app.use("/api/user", require("./routes/userRoute"));
 app.use("/api/order", require("./routes/orderRoute"));
 app.use("/api/table", require("./routes/tableRoute"));
 app.use("/api/payment", require("./routes/paymentRoute"));
+app.use("/api/invoice", require("./routes/invoiceRoute"));
 
 // Global Error Handler
 app.use(globalErrorHandler);

@@ -68,8 +68,11 @@ const login = async (req, res, next) => {
             secure: true
         })
 
-        res.status(200).json({success: true, message: "User login successfully!", 
-            data: isUserPresent
+        res.status(200).json({
+            success: true, 
+            message: "User login successfully!", 
+            data: isUserPresent,
+            token: accessToken  // ⭐ Agrega esta línea
         });
 
 

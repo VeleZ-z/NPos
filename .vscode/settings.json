@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Abyss",
+    "workbench.iconTheme": "vscode-icons",
+    "terminal.integrated.bellDuration": 1500,
+    "terminal.integrated.confirmOnExit": "always"
+}

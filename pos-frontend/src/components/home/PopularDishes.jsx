@@ -1,7 +1,11 @@
-import React from "react";
+
 import { popularDishes } from "../../constants";
+import { useNavigate } from "react-router-dom";
 
 const PopularDishes = () => {
+
+  const navigate = useNavigate();
+
   return (
     <div className="mt-6 pr-6">
       <div className="bg-[#1a1a1a] w-full rounded-lg">
@@ -9,7 +13,7 @@ const PopularDishes = () => {
           <h1 className="text-[#f5f5f5] text-lg font-semibold tracking-wide">
             Popular Dishes
           </h1>
-          <a href="" className="text-[#025cca] text-sm font-semibold">
+          <a onClick={() => navigate("/dishrank")} className="text-[#025cca] text-sm font-semibold">
             View all
           </a>
         </div>
