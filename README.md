@@ -269,14 +269,3 @@ DELETE /api/table/:id        - Eliminar mesa
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
-## Licencia
-
-Este proyecto es privado y está en desarrollo.
-
-## Contacto
-
-Proyecto desarrollado por [Tu Nombre]
-
----
-
-**Nota:** Este proyecto está adaptado específicamente para restaurantes en Colombia con facturación conforme a normativas DIAN.
